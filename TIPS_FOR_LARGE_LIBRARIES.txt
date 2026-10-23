@@ -1,0 +1,7 @@
+- Wait for a folder scan to finish before pressing Find missing covers.
+- The new button retries ONLY games that currently have no valid local cover.
+- Covers are saved permanently at %LOCALAPPDATA%\SAC23_Game_Library\covers\.
+- Missing art? Click Cover Report to see exact names, title IDs and errors.
+- You can bulk add exact images via Cover Inbox, using Game Title.jpg / CUSA12345.png.
+- Never delete %LOCALAPPDATA%\SAC23_Game_Library if you want to keep your existing catalog.
+- Network cover art depends on which publishers/catalogs host that title; there's no 100% guarantee.

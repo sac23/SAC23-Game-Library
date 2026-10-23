@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e19">
+  <title>SAC23 Game Library 2.4 — PlayStation Covers & Trailers</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand" role="banner">
+        <div class="brand-symbol"><span>23</span></div>
+        <div class="brand-copy"><strong>SAC23</strong><small>GAME LIBRARY <span class="brand-dot">●</span></small></div>
+      </div>
+      <div class="side-section-title">LIBRARY</div>
+      <nav id="nav" aria-label="Library navigation"></nav>
+      <div class="side-section-title second">TOOLS</div>
+      <button class="nav-item" data-action="folders"><span data-icon="folder-plus"></span><span>Game folders</span><span id="folderNumber" class="tiny-number">0</span></button>
+      <button class="nav-item" data-action="metadata"><span data-icon="sparkles"></span><span>Find covers & trailers</span></button>
+      <button class="nav-item" data-action="settings"><span data-icon="settings"></span><span>Settings</span></button>
+      <div class="sidebar-bottom">
+        <div class="storage-card">
+          <div class="storage-icon" data-icon="hard-drive"></div>
+          <div class="storage-text"><small>YOUR COLLECTION</small><strong id="sideStorage">0 GB</strong><span id="sideFiles">0 items indexed</span></div>
+          <div class="storage-bar"><span id="storageBar"></span></div>
+        </div>
+        <div class="bottom-note"><span class="live-dot"></span> Local • Private library <span id="versionNumber">v1.0</span></div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="topbar-heading"><span class="breadcrumb">YOUR PLAYSTATION COLLECTION</span><strong id="pageName">My Library</strong></div>
+        <div class="topbar-right"><button class="outline-btn top-artwork-btn" data-action="metadata"><span data-icon="sparkles"></span> Get covers</button>
+          <label class="search-field"><span data-icon="search"></span><input id="searchInput" type="search" autocomplete="off" placeholder="Search your collection..." aria-label="Search games"><kbd>⌕</kbd></label>
+          <button class="circle-btn" title="Settings" data-action="settings"><span data-icon="sliders-horizontal"></span></button>
+          <button class="primary-btn" data-action="folders"><span data-icon="folder-plus"></span> Add games</button>
+        </div>
+      </header>
+      <div class="content-area" id="contentArea">
+        <div id="banner"></div>
+        <section id="hero"></section>
+        <section class="stats-grid" id="stats"></section>
+        <section class="library-section">
+          <div class="library-header"><div><span class="overline">EXPLORE YOUR COLLECTION</span><h2 id="listTitle">All Games</h2></div>
+          <div class="list-controls"><span id="resultCount" class="result-count"></span><div class="select-wrap"><span data-icon="arrow-down-wide-narrow"></span><select id="sortInput" aria-label="Sort games"><option value="title">Name A–Z</option><option value="recent">Recently modified</option><option value="largest">Largest first</option><option value="smallest">Smallest first</option></select></div><button class="outline-btn rescan-button" data-action="scan"><span data-icon="refresh-cw"></span> Rescan</button></div>
+          </div>
+          <div class="game-grid" id="gameGrid"></div>
+          <div id="emptyState"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <div id="toastHost" aria-live="polite"></div>
+  <div id="modalHost"></div>
+  <script defer src="/app.js"></script>
+</body>
+</html>

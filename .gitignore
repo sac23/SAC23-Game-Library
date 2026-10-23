@@ -1,0 +1,43 @@
+# Python and editors
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local personal library, game art and sensitive files
+.env
+.env.*
+library.json
+Cover Inbox/
+covers/
+SAC23_Cover_Report*.json
+SAC23_Game_Library_Export*.json
+libretro_ps4_catalog.json
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.pem
+*.pfx
+*.p12
+*.key
+*secrets*.json
+*token*.txt
+
+# Console content: never distribute game files
+*.pkg
+*.iso
+*.cso
+*.chd
+*.zso
+*.rar
+*.7z
+*.zip
+
+# Release files distributed via GitHub Releases, not committed to git
+dist/
